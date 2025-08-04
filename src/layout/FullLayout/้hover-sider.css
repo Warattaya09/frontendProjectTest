@@ -1,0 +1,8 @@
+.hover-sider{
+    overflow: hidden;
+    width: 80px;
+    transition: width 0.3s;
+}
+.hover-sider:hover{
+    width: 180px;
+}
