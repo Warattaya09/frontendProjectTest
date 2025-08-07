@@ -6,10 +6,15 @@ import{
 }from '@ant-design/icons';
 import type { ColumnsType } from "antd/es/table";
 import Calendars from "../../../components/calendar";
+import carosel from "../../../components/carosel";
+import Carosel from "../../../components/carosel";
 const Announcements = () => {
     return(
         <>
-        <div style={{}}>
+        <Col style = {{height: "400px",marginTop: "-16"}}>
+            <Carosel/>
+        </Col>
+        
         <Row gutter={[16,32]}> 
         <Col xs={24} sm={24} md={24} lg={12} xl={8}>
             <Card >
@@ -57,17 +62,17 @@ const Announcements = () => {
             
         </Col>
         <Col>
-        <Calendars/>
+        
             
             <div>
-            <h3 style = {{ marginBottom:64
+            <h3 style = {{ marginBottom:64,marginTop: 0
                 
             }}>ข่าวประกาศ</h3>
             
             </div>
         </Col>
         </Row>
-        </div>
+        
         </>
        
         

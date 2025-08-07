@@ -1,0 +1,23 @@
+.calendar-box {
+  position: fixed;
+  /* ตรึงตำแหน่ง */
+  bottom: 0;
+  /* ชิดล่าง */
+  right: 0;
+  /* ชิดขวา */
+  width: 25vw;
+  /* กว้าง 25% ของหน้าจอ (1/4) */
+  height: 25vh;
+  /* สูง 25% ของหน้าจอ */
+  background-color: white;
+  /* เพิ่มพื้นหลังถ้าต้องการให้แยกจากพื้นหลัง */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  /* เงาเล็กน้อย */
+  z-index: 1000;
+  /* ให้อยู่เหนือ content อื่น */
+  overflow: hidden;
+  /* ป้องกันปฏิทินล้น */
+  border-radius: 8px;
+  /* ขอบมน (ถ้าชอบ) */
+  padding: 4px;
+}

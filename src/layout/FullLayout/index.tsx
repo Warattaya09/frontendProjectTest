@@ -5,6 +5,7 @@ import './้hover-sider.css';
 import {Routes, Route, Link} from "react-router-dom";
 import Home from '../../pages/adminPages/home';
 import Announcements from '../../pages/adminPages/announcements';
+import Course from '../../pages/adminPages/course'
 import {
   SolutionOutlined,
   ReadOutlined,
@@ -116,6 +117,32 @@ const FullLayout: React.FC = () => {
             </Link>
 
           </Menu.Item>
+          <Menu.Item 
+          key = '3'
+          onClick={() => setCurrentPage('3')}>
+            <Link to = "/annouce2">
+            <UserOutlined/>
+            <span>ข้อมูลนักเรียน</span>
+            </Link>
+
+          </Menu.Item>
+          <Menu.Item
+          key = '4'
+          onClick={() => setCurrentPage('4')}>
+            <Link to = "">
+            <IdcardOutlined/>
+            <span>ข้อมูลครู</span>
+            </Link>
+          </Menu.Item>
+          <Menu.Item
+          key = '5'
+          onClick={() => setCurrentPage('5')}>
+            <Link to = "/course">
+            <ReadOutlined/>
+            <span>ข้อมูลรายวิชา</span>
+            </Link>
+            
+          </Menu.Item>
           
         </Menu>
         
@@ -141,10 +168,10 @@ const FullLayout: React.FC = () => {
         </Header>
         <Content
           style={{
-            margin: '72px 0px 0px 16px', //ขนาดของกล่องเนื้อหา
+            margin: '72px 16px 0px 16px', //ขนาดของกล่องเนื้อหา
             padding: 24,
             //minHeight: 1280, //ขนาดหน้าจอมั้ง
-            background: "pink",//colorBgContainer,
+            background: "#ffffff",//"#ff9cb5",//colorBgContainer,
             borderRadius: borderRadiusLG,
             flex:1,
             overflow: 'auto',
@@ -164,6 +191,7 @@ const FullLayout: React.FC = () => {
             <Routes>
               <Route path="/" element= {<Home/>}/>
               <Route path="/announcements" element={<Announcements/>}/>
+              <Route path="/course" element={<Course/>}/>
             </Routes>
           
         
